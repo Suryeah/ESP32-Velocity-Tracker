@@ -1,0 +1,2 @@
+# ESP32-Velocity-Tracker
+ESP32 based velocity measurement module. This includes ADS1220 that acquires acceleration data from ADXL355. These data are then filtered and integrated for velocity calculation and is constantly compared with the used defined input threshold, once the velocity crosses the defined threshold, FFT is taken for both pre and post occurrence in 1 second span, thus finding the Frequency and Magnitude. These values are sent to remotely connected device through TCP socket terminal. 
